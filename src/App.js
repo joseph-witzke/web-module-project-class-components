@@ -5,7 +5,7 @@ import TodoForm from './components/TodoForm';
 const tasks = [
   {
     task: 'Do dishes',
-    id: 123, //date.Now()
+    id: Date.now(),
     completed: false
   }
 ]
@@ -41,7 +41,7 @@ class App extends React.Component {
   addTask = (item) => {
     const newItem = {
       task:item,
-      id:this.state.tasks.length,
+      id:this.state.tasks,
       completed: false
     };
 
